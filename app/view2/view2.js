@@ -34,7 +34,7 @@ require([
     SimpleLineSymbol,
     SimpleRenderer,
     Color,
-    LocateButton,
+    LocateButton1,
     parser
   ) {
     // To parse out dijits: https://dojotoolkit.org/reference-guide/1.10/dojo/parser.html
@@ -51,7 +51,7 @@ require([
 
     //Symbol used to draw farmers market points.  Default style is circle. 
     var pointSymbol = new SimpleMarkerSymbol(); 
-    //set circle size to 14 point
+    //set circle size to 10 point
     pointSymbol.setSize(10);
     //create outline and set it to green
     pointSymbol.setOutline(new SimpleLineSymbol(SimpleLineSymbol.STYLE_SOLID, new Color([0, 0, 0]), 1));
@@ -83,7 +83,7 @@ require([
     //API Reference: https://developers.arcgis.com/javascript/jsapi/locatebutton-amd.html
     //More infomation on Dojo Dijits at: https://dojotoolkit.org/reference-guide/1.10/dijit/
     //Create a new Locate Button Widget
-    var geoLocate = new LocateButton({
+    var geoLocate = new LocateButton1({
       //Bind the Widget to the map
       map: map,
       //Show a point on the map where the user is located
